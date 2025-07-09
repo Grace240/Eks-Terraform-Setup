@@ -158,7 +158,7 @@ $ kubectl create deployment autoscaler-demo --image=nginx
 
 $ kubectl get pods --all-namespaces | grep Running | wc -l
 
-$ kubectl get pods -all-namespaces --no-headers | wc -l
+$ kubectl get pods --all-namespaces --no-headers | wc -l
 
 $ kubectl get nodes -o yaml | grep pods
 
