@@ -137,7 +137,6 @@ $ sh iam-authenticator.sh
 $ kubectl get pod
 ## deploy cluster auto scaler
 $ kubectl apply -f clusterautoscaler.yml
-
  ```
 ```
 ##  Destroy Infrastructure  
@@ -158,6 +157,8 @@ NOTE: This full configuration utilizes the [Terraform http provider](https://www
 $ kubectl create deployment autoscaler-demo --image=nginx
 
 $ kubectl get pods --all-namespaces | grep Running | wc -l
+
+$ kubectl get pods -all-namespaces --no-headers | wc -l
 
 $ kubectl get nodes -o yaml | grep pods
 
