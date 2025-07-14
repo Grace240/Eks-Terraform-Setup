@@ -137,8 +137,8 @@ $ sh iam-authenticator.sh
 $ kubectl get pod
 ## deploy cluster auto scaler
 $ kubectl apply -f clusterautoscaler.yml
- ```
 ```
+
 ##  Destroy Infrastructure  
 ```sh
 $ terraform destroy --auto-approve 
